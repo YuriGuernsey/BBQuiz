@@ -1,0 +1,78 @@
+﻿body {
+    background-color: #0b85cc;
+}
+
+.section {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.recap_title{
+    text-align:center;
+    font-size: 350%;
+}
+
+.recap_title::before {
+    content: "Recap Quiz: ";
+    text-align: center;
+    font-size: 130%;
+
+}
+
+.Questions {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.answers{
+    margin: 0 auto;
+    width: 60.4%;
+    margin-top: 5%;
+}
+
+button {
+    width: 100%;
+    height: auto;
+    font-size: 150%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    background-color: #158ad3;
+    color: white;
+}
+
+button:hover {
+    background-color: #21618A;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 33.3%;
+    float: left;
+    background-color: #FFFFF;
+    display: block;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    text-align: center;
+    display: block;
+}
+
+.clear{
+    clear:both;
+}
+
+small {
+    text-align: center;
+    display: block;
+
+}
