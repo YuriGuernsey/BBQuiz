@@ -14,7 +14,7 @@ function init(){
 }
 
 
-//Question 1
+/* Question 1 */
 function Question1(){
 
    var Questions = {
@@ -54,7 +54,7 @@ function Question1(){
 }
 
 
-//Question 2
+/* Question 2 */
 function Question2(){
 
    var Questions = {
@@ -94,7 +94,7 @@ function Question2(){
 
 }
 
-//Question 3
+/* Question 3 */
 function Question3(){
 
    var Questions = {
@@ -134,7 +134,7 @@ function Question3(){
 
 }
 
-//Question 4
+/* Question 4 */
 function Question4(){
 
    var Questions = {
@@ -174,7 +174,7 @@ function Question4(){
 
 }
 
-//Question 5
+/* Question 5 */
 function Question5(){
 
    var Questions = {
@@ -203,6 +203,47 @@ function Question5(){
 
    function Correct(){
         console.log("Correct Answer");
+        Question6();
+   }
+
+    function Wrong(){
+        console.log("Wrong Answer");
+        Question1();
+        window.alert("Wrong Answer\nYou are going back to Question 1");
+    }
+
+}
+
+/* Question 6 */
+function Question6(){
+
+   var Questions = {
+    QuestionNum : "Question 6: Just to see if you were paying attention, which of these images are on the tutorial?", //Add Question
+    Question1Ans : "1", // Add Answer
+    Question2Ans : "2", // Add Answer
+    Question3Ans : "3", // Add Answer
+    Question4Ans : "4", // Add Answer
+    Correct : answer1,
+    Wrong : answer2,
+    Wrong1 : answer3,
+    Wrong2: answer4
+   }
+
+    questions.innerHTML = Questions.QuestionNum;
+    /* Display 4 Images*/
+    answer1.innerHTML = Questions.Question1Ans;
+    answer2.innerHTML = Questions.Question2Ans;
+    answer3.innerHTML = Questions.Question3Ans;
+    answer4.innerHTML = Questions.Question4Ans;
+
+
+   Questions.Correct.onclick = function() {Correct()};
+   Questions.Wrong.onclick = function() {Wrong()};
+   Questions.Wrong1.onclick = function() {Wrong()};
+   Questions.Wrong2.onclick = function() {Wrong()};
+
+   function Correct(){
+        console.log("Correct Answer");
         endOfQuiz();
    }
 
@@ -214,7 +255,7 @@ function Question5(){
 
 }
 
-// End of Quiz
+/* End of Quiz */
 function endOfQuiz(){
     questions.innerHTML = "That is the end of the Recap Quiz, Thank you!";
     answer1.innerHTML = "Go to Bitbulb";
