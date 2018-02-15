@@ -146,7 +146,7 @@ function endOfQuiz(){
    answer3.onclick = function() {restart()};
 
    function Twitter(){
-    window.open("../index.html");
+    window.open("https://twitter.com/YuriGuernsey/status/964248220326154240");
    }
 
    function Survey(){
